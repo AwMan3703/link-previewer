@@ -1,4 +1,6 @@
 
+// CONSTANTS
+
 // Select elements that hold links to preview
 const linkPreviewTargets = document.getElementsByClassName('link-preview');
 
@@ -15,16 +17,20 @@ const observer = new MutationObserver((mutations) => {
 })
 
 
+// FUNCTIONS
+
 function refreshLinkPreviews() {
     // @ts-ignore
     Array.from(linkPreviewTargets).forEach((element: HTMLElement) => {
+        // @ts-ignore
         if (!element.href) return;
+        // @ts-ignore
         element.style.setProperty('--favicon-url', `url("https://s2.googleusercontent.com/s2/favicons?domain=${element.href}")`);
     });
 }
 
 
-
+// SCRIPT
 
 // Initial preview generation
 refreshLinkPreviews();

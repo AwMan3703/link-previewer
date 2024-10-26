@@ -13,14 +13,41 @@
 		<li><a class="link-preview" href="https://google.com">Google</a></li>
 		<li><a class="link-preview" href="https://behance.net">Behance</a></li>
 		<li><a class="link-preview" href="https://instagram.com">Instagram</a></li>
+		<li><a class="link-preview" href="https://wish.com">Wish.com</a></li>
 		<li><a class="link-preview" href="https://aliexpress.com">Aliexpress</a></li>
+		<li><a class="link-preview" href="https://amazon.com">Amazon</a></li>
+		<li><a class="link-preview" href="https://imgur.com">Imgur</a></li>
+		<li><a class="link-preview" href="https://www.health.govt.nz">Portal of the New Zealand ministry of Health</a></li>
+		<li><a class="link-preview" href="https://figma.com">Figma</a></li>
 		<li><a class="link-preview" href="https://x.com">Twitter</a></li>
 	</ol>
 
-	<h3>Wanna use this in your page?</h3>
-	<code>
-		<!--TODO: add code snippet-->
-	</code>
+	<hr>
+
+	<h3>Want to use this in your page?</h3>
+	<ul>
+		<li>
+			<h4>
+				In the <code>head</code> element:
+				<button onclick="navigator.clipboard.writeText(document.getElementById('snippet-head').innerText)">Copy</button>
+			</h4>
+			<p><code id="snippet-head">
+				&#x3C;link rel=&#x22;stylesheet&#x22; href=&#x22;https://raw.githubusercontent.com/AwMan3703/link-previewer/refs/heads/main/link-previews.css&#x22;&#x3E;
+			</code></p>
+		</li>
+		<li>
+			<h4>
+				In the <code>body</code> element:
+				<button onclick="navigator.clipboard.writeText(document.getElementById('snippet-body').innerText)">Copy</button>
+			</h4>
+			<p><code id="snippet-body">
+				&#x3C;script src=&#x22;https://raw.githubusercontent.com/AwMan3703/link-previewer/refs/heads/main/link-previews.js&#x22;&#x3E;&#x3C;/script&#x3E;
+			</code></p>
+		</li>
+		<li>
+			<p>Then, add the <code>link-preview</code> class to any link you want an icon displayed for</p>
+		</li>
+	</ul>
 
 
 	<script src="../link-previews.js"></script>

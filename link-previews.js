@@ -1,3 +1,4 @@
+// CONSTANTS
 // Select elements that hold links to preview
 var linkPreviewTargets = document.getElementsByClassName('link-preview');
 // Set up a MutationObserver to detect changes in the DOM
@@ -12,14 +13,18 @@ var observer = new MutationObserver(function (mutations) {
     if (needsRefresh)
         refreshLinkPreviews();
 });
+// FUNCTIONS
 function refreshLinkPreviews() {
     // @ts-ignore
     Array.from(linkPreviewTargets).forEach(function (element) {
+        // @ts-ignore
         if (!element.href)
             return;
+        // @ts-ignore
         element.style.setProperty('--favicon-url', "url(\"https://s2.googleusercontent.com/s2/favicons?domain=".concat(element.href, "\")"));
     });
 }
+// SCRIPT
 // Initial preview generation
 refreshLinkPreviews();
 // Start observing the DOM for changes in the subtree where previews might be added or changed
