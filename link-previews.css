@@ -1,0 +1,9 @@
+.link-preview {
+  --favicon-url: "";
+}
+.link-preview::before {
+  display: inline-block;
+  content: "";
+  background-image: var(--favicon-url);
+}
+/*# sourceMappingURL=link-previews.css.map */
