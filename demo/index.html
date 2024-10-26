@@ -17,9 +17,20 @@
 		<li><a class="link-preview" href="https://x.com">Twitter</a></li>
 	</ol>
 
-	<h3>Wanna use this in your page?</h3>
-	<code>
-		<!--TODO: add code snippet-->
+	<h3>Want to use this in your page?</h3>
+	<h4>
+		In the <code>head</code> element:
+		<button onclick="navigator.clipboard.writeText(document.getElementById('snippet-head').innerText)">Copy</button>
+	</h4>
+	<code id="snippet-head">
+		&#x3C;link rel=&#x22;stylesheet&#x22; href=&#x22;https://raw.githubusercontent.com/AwMan3703/link-previewer/refs/heads/main/link-previews.css&#x22;&#x3E;
+	</code>
+	<h4>
+		In the <code>body</code> element:
+		<button onclick="navigator.clipboard.writeText(document.getElementById('snippet-body').innerText)">Copy</button>
+	</h4>
+	<code id="snippet-body">
+		&#x3C;script src=&#x22;https://raw.githubusercontent.com/AwMan3703/link-previewer/refs/heads/main/link-previews.js&#x22;&#x3E;&#x3C;/script&#x3E;
 	</code>
 
 
