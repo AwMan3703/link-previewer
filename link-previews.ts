@@ -20,6 +20,7 @@ const observer = new MutationObserver((mutations) => {
 // FUNCTIONS
 
 function refreshLinkPreviews() {
+    console.log('Updating link favicons...')
     // @ts-ignore
     Array.from(linkPreviewTargets).forEach((element: HTMLElement) => {
         // @ts-ignore

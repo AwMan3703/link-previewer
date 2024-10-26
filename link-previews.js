@@ -15,6 +15,7 @@ var observer = new MutationObserver(function (mutations) {
 });
 // FUNCTIONS
 function refreshLinkPreviews() {
+    console.log('Updating link favicons...');
     // @ts-ignore
     Array.from(linkPreviewTargets).forEach(function (element) {
         // @ts-ignore
