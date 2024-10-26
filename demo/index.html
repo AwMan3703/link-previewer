@@ -25,29 +25,35 @@
 	<hr>
 
 	<h3>Want to use this in your page?</h3>
-	<ul>
+	<ol>
 		<li>
-			<h4>
-				In the <code>head</code> element:
-				<button onclick="navigator.clipboard.writeText(document.getElementById('snippet-head').innerText)">Copy</button>
-			</h4>
-			<p><code id="snippet-head">
-				&#x3C;link rel=&#x22;stylesheet&#x22; href=&#x22;https://awman3703.github.io/link-previewer/link-previews.css&#x22;&#x3E;
-			</code></p>
+			<h4>Download and link the files, <em>OR</em> link them remotely like this:</h4>
+			<ul>
+				<li>
+					<strong>
+						In the <code>head</code> element:
+						<button onclick="navigator.clipboard.writeText(document.getElementById('snippet-head').innerText)">Copy</button>
+					</strong>
+					<p><code id="snippet-head">
+						&#x3C;link rel=&#x22;stylesheet&#x22; href=&#x22;https://awman3703.github.io/link-previewer/link-previews.css&#x22;&#x3E;
+					</code></p>
+				</li>
+				<li>
+					<strong>
+						In the <code>body</code> element:
+						<button onclick="navigator.clipboard.writeText(document.getElementById('snippet-body').innerText)">Copy</button>
+					</strong>
+					<p><code id="snippet-body">
+						&#x3C;script src=&#x22;https://awman3703.github.io/link-previewer/link-previews.js&#x22;&#x3E;&#x3C;/script&#x3E;
+					</code></p>
+				</li>
+			</ul>
 		</li>
-		<li>
-			<h4>
-				In the <code>body</code> element:
-				<button onclick="navigator.clipboard.writeText(document.getElementById('snippet-body').innerText)">Copy</button>
-			</h4>
-			<p><code id="snippet-body">
-				&#x3C;script src=&#x22;https://awman3703.github.io/link-previewer/link-previews.js&#x22;&#x3E;&#x3C;/script&#x3E;
-			</code></p>
-		</li>
+
 		<li>
 			<h4>Then, add the <code>link-preview</code> class to any link you want an icon displayed for</h4>
 		</li>
-	</ul>
+	</ol>
 
 
 	<script src="../link-previews.js"></script>
