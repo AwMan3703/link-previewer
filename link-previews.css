@@ -5,5 +5,8 @@
   display: inline-block;
   content: "";
   background-image: var(--favicon-url);
+  width: 1em;
+  height: 1em;
+  background-size: contain;
 }
 /*# sourceMappingURL=link-previews.css.map */
